@@ -1,0 +1,11 @@
+Django==5.1.1
+pillow==11.1.0
+mysqlclient==2.2.6
+mysql==0.0.3
+gunicorn==20.1.0
+whitenoise==6.8.2
+psycopg2-binary==2.9.7
+django-environ==0.10.0
+
+gunicorn your_project_name.wsgi --log-file -
+

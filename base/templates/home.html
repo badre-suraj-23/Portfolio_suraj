@@ -1,0 +1,186 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraj Badre Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <li><a href="#home" class="t-white robot">Home <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#about" class="t-white robot">About <i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#skills" class="t-white robot">Skills <i class="fa-solid fa-code"></i></a></li>
+            <li><a href="#project" class="t-white robot">Project <i class="fa-solid fa-diagram-project"></i></a></li>
+            <li><a href="#contact" class="t-white robot">Contact <i class="fa-solid fa-rocket"></i></a></li>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flext items-center">
+            <div class="home-content">
+                <h3 class="popinss">Hi, I'm</h3>
+                <h1 class="t-white">Suraj Badre Patil</h1>
+                <h3 class="popinss">Python Full Stack Developer</h3>
+                <p>Today is a beautiful day!</p>
+                <p> If you are interested in creating your personal portfolio web application, please contact me on LinkedIn or WhatsApp. </p>
+                <p> Thank you!</p>
+                <a href="https://www.linkedin.com/in/suraj-badre-000808213/" target="_blank">
+                    <button class="btn popinss">LinkedIn Profile</button>
+                </a>
+              
+
+            </div>
+        </div>
+        <div class="home-right flex s-center">
+            <div class="circle flex s-center items-center">
+                <img src="{% static 'images/mypi.webp' %}" alt="Picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    </section> 
+    <section id="about">
+        <h1 class="t center my-4 t-white f-4">About Me :</h1>
+        <div class="about container flex s-around">
+            <!-- Left Section with Flip Card -->
+            <div class="flip-container">
+                <div class="flipper">
+                    <!-- Front Side -->
+                    <div class="front">
+                        <img src="{% static 'images/myphoto.jpg' %}" alt="Front Image">
+                    </div>
+                    <!-- Back Side -->
+                    <div class="back">
+                        <img src="{% static 'images/mypic.jpg' %}" alt="Back Image">
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right Section -->
+            <div class="about-right flex">
+                <div class="about-content">
+                    <p class="t-white m-b-1 popinss">Suraj Badre Patil</p>
+                    <p class="t-white popinss">
+                        I am a dedicated and passionate Python Full Stack Developer with a strong foundation in both front-end and back-end development. I specialize in building scalable, efficient, and user-friendly applications that deliver value to businesses and end-users alike.
+    
+                        With hands-on experience in popular frameworks like Django, I excel at developing robust server-side architectures. On the front-end, I am skilled in creating intuitive and responsive interfaces using modern technologies such as React.js, ensuring seamless user experiences across all devices.
+                        
+                        I enjoy solving challenging problems, staying updated with the latest tech trends, and continuously learning to improve my skills. My goal is to craft software that not only works but also delights users with its performance and usability.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills :</h1>
+        <div class="services-container flex s-around h-50">
+            <div class="skills-left flex s-center items-center">
+                <img src="{% static 'images/work.jpeg' %}" alt="Skills Image">
+            </div>
+            <div class="skills-right flex items-center">
+                <div class="skills-container">
+                    <div class="bar"><span class="bar-container left t-white">HTML</span><span class="bar-content right-skills t-white">90%</span></div>
+                    <div class="bar"><span class="bar-container left t-white">CSS</span><span class="bar-content right-skills t-white">70%</span></div>
+                    <div class="bar"><span class="bar-container left t-white">JavaScript</span class="bar-content right-skills t-white">50%</span></div>
+                    <div class="bar"><span class="bar-container left t-white">Python</span><span class="bar-content right-skills t-white">90%</span></div>
+                    <div class="bar"><span class="bar-container left t-white">Django</span><span class="bar-content right-skills t-white">75%</span></div>
+                    <div class="bar"><span class="bar-container left t-white">Core java</span><span class="bar-content right-skills t-white">50%</span></div>
+                    <div class="bar"><span class="bar-container left t-white">MySQL</span><span class="bar-content right-skills t-white">80%</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="project">
+        <h1 class="t-center my-2 t-white f-2">Projects :</h1>
+        <div class="project-container flex s-center">
+            <div class="project-item flex f-col s-center items-center">
+                <h1 class="t-white popinss">Employee Management System</h1>
+                <p class="t-white popinss">
+                    Project Overview :
+                    The Employee Info Management System is a comprehensive solution designed to simplify and automate employee data management for businesses. This system enables efficient handling of employee records, attendance tracking, payroll management, and performance evaluations, reducing manual effort and improving overall organizational productivity.
+
+                    <p>Key Features : Add, update, and delete employee details, including personal information, job roles and contact details,Role-Based Access Control Secure access levels for administrators, HR staff, and employees,ussing django authontication system.</p>
+                    <p>Technologies Used : Backend Python Django for building the server-side application logic, and Frontend Bootstrap HTML and CSS for crafting an interactive and responsive user interface,Database Used RDBMS MySQL for secure and efficient data storage.</p>
+                    <p>Project Impact :
+                        Improved the efficiency of HR processes by 40%, enabling teams to focus on strategic tasks.
+                        Reduced payroll processing time by 60% through automation.
+                        Empowered employees with self-service options, enhancing their satisfaction and productivity.</p>
+                       <p>Challenges Solved :
+                        Reduced manual errors in employee record management by implementing automated workflows.
+                        Enhanced data security through role-based access controls and encrypted data storage.
+                        Provided actionable insights to HR teams through real-time data visualization and analytics.</p> 
+                </p>
+                <a href="https://github.com/badre-suraj-23" target="_blank" class="btn">GitHub</a>
+            </div>
+            <div class="project-item flex f-col s-center items-center">
+                <h1 class="t-white popinss">Portfolio Project</h1>
+                <p class="t-white popinss">
+                    Title: You are currently watching my Django based portfolio live project.
+                <p>Description: A responsive and feature-rich personal portfolio website built using Django. It showcases my skills, projects, and contact information in an elegant and interactive layout.</p>
+                <p>Technologies: Python, Django, HTML, CSS, JavaScript, Bootstrap,RDBMS MySQL.</p>
+                <p>Explore my projects to see how I combine technical expertise with a user-focused design approach.and give me some feedback.</p>
+
+                </p>
+                <a href="https://github.com/badre-suraj-23" target="_blank" class="btn">giHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1 class="t-center my-2 t-white f-2">Contact Me :</h1>
+        <div class="contact-container flex s-around items-center">
+            <form method="post">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Enter your Name">
+                <input type="email" name="email" placeholder="Enter your Email">
+                <input type="phone" name="number" placeholder="Enter your Phone">
+                <textarea name="content" placeholder="Enter your messages"></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+     
+     <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <a href="#home" class="">Home</a>
+            <a href="#about" class="">About</a>
+            <a href="#skills" class="">Skills</a>
+            <a href="#project" class="">Project</a>
+            <a href="#contact" class="portfolio">contact</a>
+       
+            <a href="https://www.linkedin.com/in/suraj-badre-000808213/" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/badre-suraj-23" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/invites/contact/?igsh=15us6b6rzkcb5&utm_content=39mwh4x " target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a></ul>
+     </div>
+           <p class="t-center my-2 popinss">copy; All Right Reserved -<span class="cpy-white popinss">Suraj Badre</span></p>
+          <p class="t-center my-2 popinss">Email- <span class="cpy-white popinss">Badresuraj@gmail.com</span></p>
+          <p class="t-center my-2 popinss">Contact No.<span class="cpy-white popinss">+918766420527</span></p>  
+    </footer>
+   
+</body>
+</html>
