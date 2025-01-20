@@ -8,5 +8,4 @@ psycopg2==2.9.10
 uvicorn==0.34.0
 pip==24.3.1
 
-gunicorn your_project_name.wsgi --log-file -
 
