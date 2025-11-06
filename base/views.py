@@ -3,12 +3,7 @@ from django.http import HttpResponse
 from django.contrib import messages
 from base import models
 from base.models import Contact
-# Create your views here.
-# def home(request):
-#     return HttpResponse("Hello suraj")
 
-# def home(request):
-#     return render(request,'home.html')
 
 def contact(request):
     if request.method== "POST":

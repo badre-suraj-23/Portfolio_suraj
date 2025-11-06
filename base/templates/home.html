@@ -4,189 +4,1650 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suraj Badre Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg"> <!--  -->
-
+    <title>Suraj Badre - Full Stack Developer</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.jpeg">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navbar Section -->
+    <!-- Navigation -->
     <nav id="navbar" class="flex s-around bg-color">
         <div class="left-nav">
-            <h2 class="t-white">Portfolio</h2>
+            <h2 class="t-white">Suraj<span class="accent">.</span></h2>
         </div>
         <div class="right-nav">
-            <li><a href="#home" class="t-white robot">Home <i class="fa-solid fa-house"></i></a></li>
-            <li><a href="#about" class="t-white robot">About <i class="fa-solid fa-user"></i></a></li>
-            <li><a href="#skills" class="t-white robot">Skills <i class="fa-solid fa-code"></i></a></li>
-            <li><a href="#project" class="t-white robot">Project <i class="fa-solid fa-diagram-project"></i></a></li>
-            <li><a href="#contact" class="t-white robot">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="t-white robot">Home</a></li>
+                <li><a href="#about" class="t-white robot">About</a></li>
+                <li><a href="#skills" class="t-white robot">Skills</a></li>
+                <li><a href="#project" class="t-white robot">Projects</a></li>
+                <li><a href="#resume" class="t-white robot">Resume</a></li>
+                <li><a href="#contact" class="t-white robot">Contact</a></li>
+            </ul>
         </div>
     </nav>
-       
+
     <!-- Home Section -->
     <section id="home" class="flex s-around sw-80 m-auto">
         <div class="home-left flext items-center">
             <div class="home-content">
-                
-                <h3 class="popinss">Hi, I'm</h3>
-                <h1 class="t-white">Suraj Badre Patil</h1>
-                <h3 class="popinss">Python Full Stack Developer</h3>
-                
-                <p>Today is a beautiful day!</p>
-                <p> If you are interested in creating your personal portfolio web application, please contact me on LinkedIn or WhatsApp. </p>
-                <p> Thank you!</p>
-                
-                <a href="https://www.linkedin.com/in/suraj-badre-000808213/" target="_blank">
-                    <button class="btn popinss">LinkedIn Profile</button>
-                </a>
-              
-
+                <div class="greeting">
+                    <span class="wave">👋</span>
+                    <h3 class="popinss">Hello, I'm</h3>
+                </div>
+                <h1 class="t-white name">Suraj Badre Patil</h1>
+                <h2 class="popinss accent">Python Full Stack Developer</h2>
+                <p class="intro">I create digital solutions that blend functionality with exceptional user experiences. Let's build something amazing together!</p>
+                <div class="cta-buttons">
+                    <a href="https://www.linkedin.com/in/suraj-badre-000808213/" target="_blank" class="btn primary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="#project" class="btn secondary">
+                        <i class="fas fa-code"></i> View Projects
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/badre-suraj-23" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/BadreSuraj99703" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:badresuraj@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
         </div>
         <div class="home-right flex s-center">
-            <div class="circle flex s-center items-center">
-                <img src="{% static 'images/mypi.webp' %}" alt="Picture">
+            <div class="profile-container">
+                <div class="circle flex s-center items-center">
+                    <img src="{% static 'images/mypi.webp' %}" alt="Suraj Badre Patil">
+                </div>
+                <div class="floating-elements">
+                    <span class="floating-element html">HTML</span>
+                    <span class="floating-element react">React</span>
+                    <span class="floating-element css">CSS</span>
+                    <span class="floating-element js">JS</span>
+                    <span class="floating-element python">Python</span>
+                    <span class="floating-element django">Django</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    </section> 
     <section id="about">
-        <h1 class="t center my-4 t-white f-4">About Me :</h1>
-        <div class="about container flex s-around">
-            <!-- Left Section with Flip Card -->
-            <div class="flip-container">
-                <div class="flipper">
-                    <!-- Front Side -->
-                    <div class="front">
-                        <img src="{% static 'images/myphoto.jpg' %}" alt="Front Image">
-                    </div>
-                    <!-- Back Side -->
-                    <div class="back">
-                        <img src="{% static 'images/mypic.jpg' %}" alt="Back Image">
+        <div class="container">
+            <h1 class="section-title">About Me</h1>
+            <div class="about-container flex s-around">
+                <div class="about-left">
+                    <div class="image-container">
+                        <img src="{% static 'images/myphoto.jpg' %}" alt="Suraj Badre" class="about-image">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Suraj Badre Patil</h3>
+                                <p>Full Stack Developer</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-            <!-- Right Section -->
-            <div class="about-right flex">
-                <div class="about-content">
-                    <p class="t-white m-b-1 popinss">Suraj Badre Patil</p>
-                    <p class="t-white popinss">
-                        I am a dedicated and passionate Python Full Stack Developer with a strong foundation in both front-end and back-end development. I specialize in building scalable, efficient, and user-friendly applications that deliver value to businesses and end-users alike.
-    
-                        With hands-on experience in popular frameworks like Django, I excel at developing robust server-side architectures. On the front-end, I am skilled in creating intuitive and responsive interfaces using modern technologies such as React.js, ensuring seamless user experiences across all devices.
-                        
-                        I enjoy solving challenging problems, staying updated with the latest tech trends, and continuously learning to improve my skills. My goal is to craft software that not only works but also delights users with its performance and usability.
-                    </p>
+                <div class="about-right flex">
+                    <div class="about-content">
+                        <p class="intro-text">
+                            Python Full Stack Developer with a strong foundation in both front-end and back-end development. 
+                            I specialize in building scalable, efficient, and user-centric web applications that deliver real value.
+                        </p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <h4>Experience</h4>
+                                <p>2+ Years in Web Development</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Education</h4>
+                                <p>B.E. in ME</p> 
+                            </div>
+                            <div class="detail-item">
+                                <h4>Location</h4>
+                                <p>India, Pune, Maharashtra</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4>Availability</h4>
+                                <p>Available for Freelance Projects & Exciting Job Opportunities</p>
+                            </div>
+                        </div>
+                        <a href="#contact" class="btn primary">Get In Touch</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    
 
     <!-- Skills Section -->
     <section id="skills">
-        <h1 class="t-center my-2 t-white f-2">Skills :</h1>
-        <div class="services-container flex s-around h-50">
-            <div class="skills-left flex s-center items-center">
-                <img src="{% static 'images/work.jpeg' %}" alt="Skills Image">
-            </div>
-            <div class="skills-right flex items-center">
-                <div class="skills-container">
-                    <div class="bar"><span class="bar-container left t-white">HTML</span><span class="bar-content right-skills t-white">90%</span></div>
-                    <div class="bar"><span class="bar-container left t-white">CSS</span><span class="bar-content right-skills t-white">70%</span></div>
-                    <div class="bar"><span class="bar-container left t-white">JavaScript</span class="bar-content right-skills t-white">50%</span></div>
-                    <div class="bar"><span class="bar-container left t-white">Python</span><span class="bar-content right-skills t-white">90%</span></div>
-                    <div class="bar"><span class="bar-container left t-white">Django</span><span class="bar-content right-skills t-white">75%</span></div>
-                    <div class="bar"><span class="bar-container left t-white">Core java</span><span class="bar-content right-skills t-white">50%</span></div>
-                    <div class="bar"><span class="bar-container left t-white">MySQL</span><span class="bar-content right-skills t-white">80%</span></div>
+        <div class="container">
+            <h1 class="section-title">My Skills</h1>
+            <div class="skills-container flex s-around">
+                <div class="skills-visual flex s-center items-center">
+                    <div class="skills-orb">
+                        <div class="orb-center">
+                            <span>Skills</span>
+                        </div>
+                        <div class="orb-item" style="--i:1">HTML</div>
+                        <div class="orb-item" style="--i:2">CSS</div>
+                        <div class="orb-item" style="--i:3">JS</div>
+                        <div class="orb-item" style="--i:4">Python</div>
+                        <div class="orb-item" style="--i:5">Django</div>
+                        <div class="orb-item" style="--i:6">React</div>
+                        <div class="orb-item" style="--i:7">MySQL</div>
+                        <div class="orb-item" style="--i:8">PostgreSQL</div>
+                    </div>
+                </div>
+                <div class="skills-details">
+                    <div class="skill-category">
+                        <h3>Frontend Development</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend Development</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Django REST</span>
+                            <span class="skill-tag">FastAPI</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Database & Tools</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Project Section -->
+    <!-- Projects Section -->
     <section id="project">
-        <h1 class="t-center my-2 t-white f-2">Projects :</h1>
-        <div class="project-container flex s-center">
-            <div class="project-item flex f-col s-center items-center">
-                <h1 class="t-white popinss">Employee Management System</h1>
-                <a href="https://employeeinfo.onrender.com" target="_blank" class="btn">Project Live Demo <link rel="stylesheet" href=""></a>
+        <div class="container">
+            <h1 class="section-title">My Projects</h1>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'images/cryto.PNG' %}" alt="Cryptocurrency Tracker">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://react-crypto-drab.vercel.app/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/badre-suraj-23/React-Crypto" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cryptocurrency Tracker</h3>
+                        <p>Real-time crypto dashboard with 200+ coins, wallet integration, and news updates using React and Django REST.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Django REST</span>
+                            <span>JWT</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
 
-                <p class="t-white popinss">
-                    Project Overview :
-                    The Employee Info Management System is a comprehensive solution designed to simplify and automate employee data management for businesses. This system enables efficient handling of employee records, attendance tracking, payroll management, and performance evaluations, reducing manual effort and improving overall organizational productivity.
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'images/blog.jpg' %}" alt="BlogMedia Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://blogmedia.onrender.com/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/badre-suraj-23/BlogMediaApp" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>BlogMedia Platform</h3>
+                        <p>Full-stack blogging platform with JWT authentication, CRUD operations, and media upload support.</p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>DRF</span>
+                            <span>JavaScript</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
 
-                    <p>Key Features : Add, update, and delete employee details, including personal information, job roles and contact details,Role-Based Access Control Secure access levels for administrators, HR staff, and employees,ussing django authontication system.</p>
-                    <p>Technologies Used : Backend Python Django for building the server-side application logic, and Frontend Bootstrap HTML and CSS for crafting an interactive and responsive user interface,Database Used RDBMS MySQL for secure and efficient data storage.</p>
-                    <p>Project Impact :
-                        Improved the efficiency of HR processes by 40%, enabling teams to focus on strategic tasks.
-                        Reduced payroll processing time by 60% through automation.
-                        Empowered employees with self-service options, enhancing their satisfaction and productivity.</p>
-                       <p>Challenges Solved :
-                        Reduced manual errors in employee record management by implementing automated workflows.
-                        Enhanced data security through role-based access controls and encrypted data storage.
-                        Provided actionable insights to HR teams through real-time data visualization and analytics.</p> 
-                        <p>🌍 Live on Rende,🔐 Secure Data Handling – Environment variables are used to store database credentials securely,🛠️ Error Monitoring – Render logs help in quick debugging and tracking system health.</p>
-                </p>
-                <a href="https://github.com/badre-suraj-23" target="_blank" class="btn">GitHub</a>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'images/portfolio.jpg' %}" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://portfolio-suraj.onrender.com/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/badre-suraj-23/Portfolio_suraj" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Responsive personal portfolio built with Django showcasing projects, skills, and contact info.</p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="{% static 'images/AI.jpg' %}" alt="AI Chat Assistant">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://langchain-gemini-ai.onrender.com/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/badre-suraj-23/Langchain-Gemini-AI" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI Chat Assistant</h3>
+                        <p>AI chatbot using Google Gemini API and LangChain for real-time conversation with persistent chat history.</p>
+                        <div class="project-tech">
+                            <span>Streamlit</span>
+                            <span>LangChain</span>
+                            <span>FastAPI</span>
+                            <span>Gemini API</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="project-item flex f-col s-center items-center">
-                <h1 class="t-white popinss">Portfolio Project</h1>
-                <p class="t-white popinss">
-                    Title: You are currently watching my Django based portfolio live project.
-                <p>Description: A responsive and feature-rich personal portfolio website built using Django. It showcases my skills, projects, and contact information in an elegant and interactive layout.</p>
-                <p>Technologies: Python, Django, HTML, CSS, JavaScript, Bootstrap,RDBMS MySQL.</p>
-                <p>Explore my projects to see how I combine technical expertise with a user-focused design approach.and give me some feedback.</p>
+        </div>
+    </section>
 
-                </p>
-                <a href="https://github.com/badre-suraj-23" target="_blank" class="btn">GiHub</a>
+    <!-- NEW RESUME SECTION -->
+    <section id="resume">
+        <div class="container">
+            <h1 class="section-title">My Resume</h1>
+            <div class="resume-container">
+                <div class="resume-header">
+                    <div class="resume-download">
+                        <a href="{% static 'resume/BadreSuraj_Resume5.pdf' %}" 
+                       download  class="btn primary">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="resume-content">
+                    <!-- Experience Section -->
+                    <div class="resume-section">
+                        <h2 class="resume-section-title">
+                            <i class="fas fa-briefcase"></i>
+                            Work Experience
+                        </h2>
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <h3>Python Full Stack Developer</h3>
+                                <span class="resume-date">2022 - Present</span>
+                            </div>
+                            <div class="resume-company">Freelance & Personal Projects</div>
+                            <ul class="resume-details">
+                                <li>Developed full-stack web applications using Django, React, and PostgreSQL</li>
+                                <li>Built RESTful APIs with Django REST Framework for frontend integration</li>
+                                <li>Implemented responsive UI designs with modern CSS frameworks</li>
+                                <li>Deployed applications on cloud platforms like Render and Vercel</li>
+                            </ul>
+                        </div>
+                        
+                        {% comment %} <div class="resume-item">
+                            <div class="resume-item-header">
+                                <h3>Web Development Intern</h3>
+                                <span class="resume-date">2021 - 2022</span>
+                            </div>
+                            <div class="resume-company">Tech Solutions Inc.</div>
+                            <ul class="resume-details">
+                                <li>Assisted in developing and maintaining company websites</li>
+                                <li>Collaborated with senior developers on backend functionality</li>
+                                <li>Participated in code reviews and team meetings</li>
+                                <li>Gained experience in agile development methodologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                     {% endcomment %}
+                    {% comment %} <!-- Education Section -->
+                    <div class="resume-section">
+                        <h2 class="resume-section-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            Education
+                        </h2>
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <h3>Bachelor of Engineering in Computer Science</h3>
+                                <span class="resume-date">2018 - 2022</span>
+                            </div>
+                            <div class="resume-company">University of Mumbai</div>
+                            <ul class="resume-details">
+                                <li>Graduated with First Class Honors</li>
+                                <li>Coursework: Data Structures, Algorithms, Database Systems, Web Technologies</li>
+                                <li>Final Year Project: E-commerce Platform using Django</li>
+                            </ul>
+                        </div>
+                    </div> {% endcomment %}
+                    
+                    <!-- Certifications Section -->
+                    <div class="resume-section">
+                        <h2 class="resume-section-title">
+                            <i class="fas fa-certificate"></i>
+                            Certifications
+                        </h2>
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <h3>Python Django - The Practical Guide</h3>
+                                <span class="resume-date">2024</span>
+                            </div>
+                            <div class="resume-company">Udemy</div>
+                        </div>
+                        
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <h3>React - The Complete Guide</h3>
+                                <span class="resume-date">2025</span>
+                            </div>
+                            <div class="resume-company">Udemy</div>
+                        </div>
+                        
+                        <div class="resume-item">
+                            <div class="resume-item-header">
+                                <h3>REST APIs with Django REST Framework</h3>
+                                <span class="resume-date">2024</span>
+                            </div>
+                            <div class="resume-company">Coursera</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h1 class="t-center my-2 t-white f-2">Contact Me :</h1>
-        <div class="contact-container flex s-around items-center">
-            <form method="post">
-                {% csrf_token %}
-                <input type="text" name="name" placeholder="Enter your Name">
-                <input type="email" name="email" placeholder="Enter your Email">
-                <input type="phone" name="number" placeholder="Enter your Phone">
-                <textarea name="content" placeholder="Enter your messages"></textarea>
-                <button type="submit" class="btn">Send</button>
-            </form>
+        <div class="container">
+            <h1 class="section-title">Get In Touch</h1>
+            <div class="contact-container flex s-around">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>badresuraj@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 8766420527</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-contact">
+                        <a href="https://www.linkedin.com/in/suraj-badre-000808213/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://twitter.com/BadreSuraj99703" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://github.com/badre-suraj-23" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <form method="post" class="contact-form">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="number" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="content" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary full-width">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-     
-     <footer id="footer">
-        <ul class="flex s-center w-80 m-auto my-2 res">
-            <a href="#home" class="">Home</a>
-            <a href="#about" class="">About</a>
-            <a href="#skills" class="">Skills</a>
-            <a href="#project" class="">Project</a>
-            <a href="#contact" class="portfolio">contact</a>
-       
-            <a href="https://www.linkedin.com/in/suraj-badre-000808213/" target="_blank">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/badre-suraj-23" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-       </ul>
-     </div>
-           <p class="t-center my-2 popinss">copy; All Right Reserved -<span class="cpy-white popinss">Suraj Badre</span></p>
-          <p class="t-center my-2 popinss">Email- <span class="cpy-white popinss">Badresuraj@gmail.com</span></p>
-          <p class="t-center my-2 popinss">Contact No.<span class="cpy-white popinss">+918766420527</span></p>  
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Suraj Badre</h2>
+                    <p>Full Stack Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#project">Projects</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/suraj-badre-000808213/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/BadreSuraj99703" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/badre-suraj-23" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Suraj Badre. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
-   
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // Mobile Navigation Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Simple form validation
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                const name = contactForm.querySelector('input[name="name"]');
+                const email = contactForm.querySelector('input[name="email"]');
+                const message = contactForm.querySelector('textarea[name="content"]');
+                
+                if (!name.value || !email.value || !message.value) {
+                    e.preventDefault();
+                    alert('Please fill in all required fields.');
+                }
+            });
+        }
+    </script>
+
+    <style>
+        /* Your existing CSS remains the same */
+        :root {
+            --primary-color: #00bcd4;
+            --secondary-color: #ff9800;
+            --dark-color: #0e0e0e;
+            --dark-gray: #1e1e1e;
+            --light-gray: #f5f5f5;
+            --text-color: #ffffff;
+            --text-secondary: #cccccc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--dark-color);
+            color: var(--text-color);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--text-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .accent {
+            color: var(--primary-color);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn.primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn.secondary {
+            background: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn.primary:hover {
+            background: #0097a7;
+        }
+
+        .btn.secondary:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .full-width {
+            width: 100%;
+        }
+
+        /* Navigation */
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: var(--dark-gray);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .left-nav h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .right-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links li a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            width: 30px;
+            height: 21px;
+            justify-content: space-between;
+        }
+
+        .hamburger span {
+            display: block;
+            height: 3px;
+            width: 100%;
+            background: var(--text-color);
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(9px) rotate(45deg);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-9px) rotate(-45deg);
+        }
+
+        /* Home Section */
+        #home {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100vh;
+            padding: 100px 5% 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .home-left {
+            flex: 1;
+            max-width: 600px;
+        }
+
+        .greeting {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .wave {
+            font-size: 1.5rem;
+            margin-right: 10px;
+            animation: wave 2s infinite;
+        }
+
+        @keyframes wave {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(15deg); }
+            75% { transform: rotate(-15deg); }
+        }
+
+        .home-content h1.name {
+            font-size: 3.5rem;
+            margin: 10px 0;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+        }
+
+        .home-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: var(--text-secondary);
+            max-width: 500px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--dark-gray);
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .home-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .profile-container {
+            position: relative;
+        }
+
+        .circle {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--primary-color);
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 188, 212, 0.3);
+            transition: transform 1s ease;
+        }
+
+        .circle:hover {
+            transform: rotateY(180deg);
+        }
+
+        .circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .floating-element {
+            position: absolute;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            animation: float 7s infinite ease-in-out;
+        }
+          .floating-element.react {
+            top: 10%;
+            left: 50%;
+            background:  rgba(97, 219, 251, 0.15); 
+            color:#61DBFB;
+            animation-delay: 0s;
+        }
+        .floating-element.html {
+            top: 10%;
+            left: 10%;
+            background: rgba(255, 140, 0, 0.2);
+            color: #FF8C00;
+            animation-delay: 5s;
+        }
+
+        .floating-element.css {
+            top: 20%;
+            right: 10%;
+            background: rgba(33, 150, 243, 0.2);
+            color: #2196F3;
+            animation-delay: 1s;
+        }
+
+        .floating-element.js {
+            bottom: 30%;
+            left: 5%;
+            background: rgba(247, 223, 30, 0.2);
+            color: #F7DF1E;
+            animation-delay: 2s;
+        }
+
+        .floating-element.python {
+            bottom: 20%;
+            right: 15%;
+            background: rgba(55, 118, 171, 0.2);
+            color: #3776AB;
+            animation-delay: 3s;
+        }
+
+        .floating-element.django {
+            bottom: 20%;
+            left: 20%;
+            background: rgba(9, 46, 32, 0.2);
+            color: #1B5E20;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        /* About Section */
+        #about {
+            padding: 100px 0;
+            background: var(--dark-gray);
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-left {
+            flex: 1;
+        }
+
+        .image-container {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            padding: 20px;
+            transform: translateY(100%);
+            transition: transform 0.5s ease;
+        }
+
+        .image-container:hover .image-overlay {
+            transform: translateY(0);
+        }
+
+        .image-container:hover .about-image {
+            transform: scale(1.05);
+        }
+
+        .overlay-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .overlay-content p {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .about-right {
+            flex: 1;
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: var(--text-secondary);
+        }
+
+        .about-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .detail-item h4 {
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .detail-item p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Skills Section */
+        #skills {
+            padding: 100px 0;
+            background: var(--dark-color);
+        }
+
+        .skills-container {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .skills-visual {
+            flex: 1;
+        }
+
+        .skills-orb {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: rotate 20s linear infinite;
+        }
+
+        .orb-center {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: var(--dark-gray);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            color: var(--primary-color);
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.3);
+            z-index: 10;
+        }
+
+        .orb-item {
+            position: absolute;
+            left: 0;
+            transform-origin: 150px;
+            transform: rotate(calc(45deg * var(--i)));
+            color: var(--text-color);
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background: var(--dark-gray);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .skills-details {
+            flex: 1;
+        }
+
+        .skill-category {
+            margin-bottom: 30px;
+        }
+
+        .skill-category h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            padding: 8px 15px;
+            background: var(--dark-gray);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .skill-tag:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Projects Section */
+        #project {
+            padding: 100px 0;
+            background: var(--dark-gray);
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: var(--dark-color);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-image {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .project-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            background: var(--secondary-color);
+            transform: scale(1.1);
+        }
+
+        .project-content {
+            padding: 20px;
+        }
+
+        .project-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        .project-content p {
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .project-tech span {
+            padding: 5px 10px;
+            background: var(--dark-gray);
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: var(--primary-color);
+        }
+
+        /* NEW RESUME SECTION STYLES */
+        #resume {
+            padding: 100px 0;
+            background: var(--dark-color);
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--dark-gray);
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .resume-header {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 30px;
+        }
+
+        .resume-content {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .resume-section {
+            border-left: 3px solid var(--primary-color);
+            padding-left: 20px;
+        }
+
+        .resume-section-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .resume-section-title i {
+            font-size: 1.2rem;
+        }
+
+        .resume-item {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #333;
+        }
+
+        .resume-item:last-child {
+            border-bottom: none;
+        }
+
+        .resume-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+        }
+
+        .resume-item-header h3 {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .resume-date {
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .resume-company {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .resume-details {
+            padding-left: 20px;
+        }
+
+        .resume-details li {
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 100px 0;
+            background: var(--dark-gray);
+        }
+
+        .contact-container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .contact-info p {
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+        }
+
+        .contact-details {
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-item i {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--dark-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .contact-item h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-item p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+
+        .social-contact {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-contact a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--dark-color);
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .social-contact a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .contact-form {
+            flex: 1;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background: var(--dark-gray);
+            color: var(--text-color);
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        /* Footer */
+        #footer {
+            background: var(--dark-gray);
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .footer-logo h2 {
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+
+        .footer-logo p {
+            color: var(--text-secondary);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+        }
+
+        .footer-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--dark-color);
+            color: var(--text-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--secondary-color);
+            transform: translateY(-5px);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .about-container,
+            .skills-container,
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .home-content h1.name {
+                font-size: 2.8rem;
+            }
+
+            .circle {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                flex-direction: column;
+                background: var(--dark-gray);
+                width: 80%;
+                max-width: 300px;
+                height: calc(100vh - 70px);
+                padding: 20px;
+                transition: right 0.3s ease;
+                box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            #home {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding-top: 120px;
+            }
+
+            .home-left, .home-right {
+                width: 100%;
+            }
+
+            .home-content h1.name {
+                font-size: 2.5rem;
+            }
+
+            .cta-buttons {
+                justify-content: center;
+            }
+
+            .circle {
+                width: 250px;
+                height: 250px;
+                margin-bottom: 30px;
+            }
+
+            .about-details {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            /* Resume Responsive */
+            .resume-container {
+                padding: 20px;
+            }
+
+            .resume-item-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .resume-date {
+                align-self: flex-start;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .home-content h1.name {
+                font-size: 2rem;
+            }
+
+            .home-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .circle {
+                width: 200px;
+                height: 200px;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-orb {
+                width: 250px;
+                height: 250px;
+            }
+
+            .orb-item {
+                transform-origin: 125px;
+            }
+        }
+    </style>
 </body>
 </html>
